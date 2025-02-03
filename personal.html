@@ -175,7 +175,7 @@
 
   <form>
     <label for="sectionSelect">Go to section:</label>
-    <select id="sectionSelect" onchange="location = this.value;">
+    <select id="sectionSelect"> <!--Does not work because not sure onChange="JS code" is allowed-->
         <option value="#">Select...</option>
         <optgroup label="Projects">
             <option value="#Teaching">Teaching</option>
