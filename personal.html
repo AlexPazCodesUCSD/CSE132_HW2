@@ -33,41 +33,25 @@
   </style>
 </head>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="professional.html">Professional</a>
-    <a href="personal.html">Personal</a>
-    <a href="contact.html">Contact</a>
-    <a href="experiment.html">Experiment</a>
-    <a href="settings.html">Settings</a>
-  </nav>
-  <br>
-  <h1><i>My Personal Work</i></h1>
-  <br>
-</header>
 <body>
-  <hello-world></hello-world>
-
-  <script>
-      // Define a custom element called 'hello-world'
-      class HelloWorld extends HTMLElement {
-          constructor() {
-              super();
-              // Log 'Hello World!' to the console when the element is created
-              console.log('Hello World!');
-          }
-      }
-
-      // Register the custom element
-      customElements.define('hello-world', HelloWorld);
-  </script>
-  <noscript>You do not have JavaScript on or your browser does not support JS5.</noscript>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="professional.html">Professional</a>
+      <a href="personal.html">Personal</a>
+      <a href="contact.html">Contact</a>
+      <a href="experiment.html">Experiment</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <br>
+    <h1><i>My Personal Work</i></h1>
+    <br>
+  </header>
 
   <h2>My Academic Calendar</h2>
   <p>I currently study at UC San Diego. Here is a list of all the courses I took and will take in the course of my program.</p>
     
-  <table class = "academic_calendar" border="1">
+  <table class = "academic_calendar">
     <caption>UC San Diego Academic History</caption>
   
     <colgroup>
@@ -187,27 +171,23 @@
     </tbody>
   </table>
   
-  <br>
   <hr>
-  <br>
 
-  <search>
-    <form>
-      <label for="sectionSelect">Go to section:</label>
-      <select id="sectionSelect" onchange="location = this.value;">
-          <option value="#">Select...</option>
-          <optgroup label="Projects">
-              <option value="#Teaching">Teaching</option>
-              <option value="#GameDevelopment">Game Development</option>
-              <option value="#Graphics">Graphics</option>
-          </optgroup>
-          <optgroup label="Recreational">
-              <option value="#Youtube">Youtube</option>
-              <option value="#Gaming">Gaming</option>
-          </optgroup>
-      </select>
+  <form>
+    <label for="sectionSelect">Go to section:</label>
+    <select id="sectionSelect" onchange="location = this.value;">
+        <option value="#">Select...</option>
+        <optgroup label="Projects">
+            <option value="#Teaching">Teaching</option>
+            <option value="#GameDevelopment">Game Development</option>
+            <option value="#Graphics">Graphics</option>
+        </optgroup>
+        <optgroup label="Recreational">
+            <option value="#Youtube">Youtube</option>
+            <option value="#Gaming">Gaming</option>
+        </optgroup>
+    </select>
   </form>
-  </search>
 
 <br>
 
@@ -218,7 +198,7 @@
   <p>In CSE 198, I got to make a lesson plan introducing HTML, CSS, and JavaScript for K-12 students. I even got to teach K-12 students my lesson plan, which was amazing to see my work get to the students. </p><br>
 </section>
 
-<section id="Game Development">
+<section id="GameDevelopment">
   <h2>Game Development</h2>
   <p>I love the idea of programming games on the side. I have been interested in starting a mobile game project in the near future for example. The idea of a fun little mobile game to pass the time and share with my friends sounds so exciting.</p>
 

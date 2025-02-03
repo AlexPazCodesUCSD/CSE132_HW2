@@ -38,7 +38,7 @@
   </dl>
 
   <p>Let's abbreviate!</p>
-  
+
   <p>This project is <abbr>HTML</abbr> only.</p>
 
   <p>
@@ -105,5 +105,21 @@
   </figcaption>
 </figure>
 
+<hello-world></hello-world>
+
+  <script>
+      // Define a custom element called 'hello-world'
+      class HelloWorld extends HTMLElement {
+          constructor() {
+              super();
+              // Log 'Hello World!' to the console when the element is created
+              console.log('Hello World!');
+          }
+      }
+
+      // Register the custom element
+      customElements.define('hello-world', HelloWorld);
+  </script>
+  <noscript>You do not have JavaScript on or your browser does not support JS5.</noscript>
 </body>
 </html>
