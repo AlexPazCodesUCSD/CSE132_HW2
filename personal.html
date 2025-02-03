@@ -195,20 +195,19 @@
   <search>
     <form>
       <label for="sectionSelect">Go to section:</label>
-    </form>
-    <!--This does not work without script, but  -->
-    <select id="sectionSelect" >
-        <option value="#">Select...</option>
-        <optgroup label="Projects">
-          <option value="#Teaching"> Teaching</option>
-          <option value="#Game Development">Game Development</option>
-          <option value="#Graphics">Graphics</option>  
-        </optgroup>
-        <optgroup label="Recreational">
-          <option value="#Youtube">Youtube</option>
-          <option value="#Gaming">Gaming</option>
-        </optgroup>
-    </select>
+      <select id="sectionSelect" onchange="location = this.value;">
+          <option value="#">Select...</option>
+          <optgroup label="Projects">
+              <option value="#Teaching">Teaching</option>
+              <option value="#GameDevelopment">Game Development</option>
+              <option value="#Graphics">Graphics</option>
+          </optgroup>
+          <optgroup label="Recreational">
+              <option value="#Youtube">Youtube</option>
+              <option value="#Gaming">Gaming</option>
+          </optgroup>
+      </select>
+  </form>
   </search>
 
 <br>
