@@ -20,108 +20,96 @@
     <br>
     <h1><i>Experiment Work</i></h1>
   </header>
-  
+
   <main>
-    <dialog open>
-      <p>Warning, cool content ahead!</p>
-      <form method="dialog">
-        <button>OK</button>
+    <section>
+      <h2>Text Tag Experiments</h2>
+      <del>Strike through a line with del tag!</del>
+      <ins>Insert new text with insert!</ins>
+      <br>
+      <title>Description tag</title>
+      <dl>
+        <dt>Define term tag</dt>
+        <dd>Description tag</dd>
+      </dl>
+      <br>
+      <p>
+        <strong>HTML (<dfn id="html_link">Hypertext Markup Language</dfn>)</strong> a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+      </p>
+      <br>
+      <p>We may span this color <span style="color:blue">blue da ba di da ba di</span></p>
+      <br>
+      <p>I love <code><a href="#html_link">HTML</a></code></p>
+      <br>
+      <p>Remember to use <i>italics</i></p>
+      <br>
+      <p>You <em>have</em> to hurry up!</p>
+      <br>
+      <pre>
+        pre is    weird
+        lets me      do weird
+        weird things like this
+      </pre>
+      <br>
+      <p>Future javascript to add an easter egg when the <kbd>t</kbd> key is pressed</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Here is a form with input and datalist, which doesn't fit into this portfolio</h2>
+      <form>
+        <label for="ProjectType">Select project status:</label>
+        <input list="statusList" id="projectStatus" name="status" placeholder="Find a project type">
+        
+        <datalist id="typeList">
+          <option value="Programming">
+          <option value="Writing">
+          <option value="Teamwork">
+          <option value="">
+        </datalist>
+        <button type="submit">Filter</button>
       </form>
-    </dialog>
+      <br>
+
+      <!--I have no where to put a textarea-->
+      <h2>Here is a form with textarea, since I cannot find a use for it in my portfolio.</h2>
+      <form>
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <hr>
+    <section>
+      <h2>Here is a future quote I would like to add!</h2>
+      <figure>
+        <blockquote>
+          <p>The mystery of life isn't a problem to solve, but a reality to experience.</p>
+        </blockquote>
+        <figcaption>
+          from <cite>Dune</cite> by Frank Herbert
+        </figcaption>
+      </figure>
+    </section>
   
-    <del>Strike through a line with del tag!</del>
-    <ins>Insert new text with insert!</ins>
-  
-    <title>Description tag</title>
-    <dl>
-      <dt>Define term tag</dt>
-      <dd>Description tag</dd>
-    </dl>
-  
-    <p>Let's abbreviate!</p>
-  
-    <p>This project is <abbr>HTML</abbr> only.</p>
-  
-    <p>
-      <strong>HTML (<dfn id="html_link">Hypertext Markup Language</dfn>)</strong> a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
-    </p>
-    <p>I love <code><a href="#html_link">HTML</a></code></p>
-    <p>Remember to use <i>italics</i></p>
-  
-    <br>
-  
-    <aside>
-      <h4>aside</h4>
-      <p>Here we can mention an aside, definitely useful!</p>
-    </aside>
-  
-    <div>
-      <p>we know div</p>
-    </div>
-  
-    <p>We may span this color <span style="color:blue">blue da ba di da ba di</span></p>
-  
-    <!--Note: different from i, because i is just italics, this is to emphasize, a screen reader importance-->
-    <p>You <em>have</em> to hurry up!</p>
-  
-    <pre>
-      pre is    weird
-      lets me      do weird
-      weird things like this
-    </pre>
-  
-    <audio src="sounds/hearthome.mp3" controls></audio>
-  
-    <h2>Here is a form with input and datalist, which doesn't fit into this portfolio</h2>
-    <form>
-      <label for="ProjectType">Select project status:</label>
-      <input list="statusList" id="projectStatus" name="status" placeholder="Find a project type">
-      
-      <datalist id="typeList">
-        <option value="Programming">
-        <option value="Writing">
-        <option value="Teamwork">
-        <option value="">
-      </datalist>
-      <button type="submit">Filter</button>
-    </form>
-  
-  
-    <!--I have no where to put a textarea-->
-    <form>
-      <label for="message">Your Message:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
-      <br><br>
-      <button type="submit">Submit</button>
-  </form>
-  
-  <p>Future javascript to add an easter egg when the <kbd>t</kbd> key is pressed</p>
-  
-  <figure>
-    <blockquote>
-      <p>The mystery of life isn't a problem to solve, but a reality to experience.</p>
-    </blockquote>
-    <figcaption>
-      from <cite>Dune</cite> by Frank Herbert
-    </figcaption>
-  </figure>
-  
-  <hello-world></hello-world>
-  
-    <script>
-        // Define a custom element called 'hello-world'
-        class HelloWorld extends HTMLElement {
-            constructor() {
-                super();
-                // Log 'Hello World!' to the console when the element is created
-                console.log('Hello World!');
-            }
-        }
-  
-        // Register the custom element
-        customElements.define('hello-world', HelloWorld);
-    </script>
-    <noscript>You do not have JavaScript on or your browser does not support JS5.</noscript>
+    <section>
+      <h2>I have added a custom element that outputs hello world into the console.</h2>
+      <hello-world></hello-world>
+      <script>
+          // Define a custom element called 'hello-world'
+          class HelloWorld extends HTMLElement {
+              constructor() {
+                  super();
+                  // Log 'Hello World!' to the console when the element is created
+                  console.log('Hello World!');
+              }
+          }
+    
+          // Register the custom element
+          customElements.define('hello-world', HelloWorld);
+      </script>
+      <noscript>You do not have JavaScript on or your browser does not support JS5.</noscript>
+    </section>
   </main>
 </body>
 </html>
